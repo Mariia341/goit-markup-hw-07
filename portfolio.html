@@ -22,33 +22,45 @@
 
   <body class="page">
     <!-- header -->
-    <header class="page-header">
-      <div class="container">
-        <a href="./index.html" lang="en" class="logo">
-          <span class="logo-web">Web</span
-          ><span class="logo-studio">Studio</span></a
+    <header class="header">
+      <div class="container header__content">
+        <a class="logo" href="./index.html" lang="en">
+          <span class="logo--blue-word">Web</span
+          ><span class="logo--focused">Studio</span></a
         >
-        <nav>
-          <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студия</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфолио</a>
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link" href="">Студия</a>
             </li>
-            <li class="item"><a href="#address" class="link">Контакты</a></li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#address">Контакты</a>
+            </li>
           </ul>
         </nav>
 
-        <ul class="contacts-items list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="contact">
+        <ul class="contacts header__contacts list">
+          <li class="contacts__item contacts__item--inline">
+            <a
+              class="contacts__link contacts__link--inline"
+              href="mailto:info@devstudio.com"
+            >
               <svg class="icon-envelope" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="contact">
+          <li class="contacts__item contacts__item--inline">
+            <a
+              class="contacts__link contacts__link--inline"
+              href="tel:+380961111111"
+            >
               <svg class="icon-phon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-vector"></use>
               </svg>
@@ -63,38 +75,50 @@
       <section class="gallery section">
         <div class="container">
           <h1 hidden>Портфолио</h1>
-          <ul class="btn-list">
-            <li class="item">
-              <button type="button" class="button secondary current">
+          <ul class="filter__list">
+            <li class="filter__item">
+              <button
+                type="button"
+                class="button filter__button filter__button--current"
+              >
                 Все
               </button>
             </li>
             <li class="item">
-              <button type="button" class="button secondary">Веб-сайты</button>
+              <button type="button" class="button filter__button">
+                Веб-сайты
+              </button>
             </li>
             <li class="item">
-              <button type="button" class="button secondary">Приложения</button>
+              <button type="button" class="button filter__button">
+                Приложения
+              </button>
             </li>
             <li class="item">
-              <button type="button" class="button secondary">Дизайн</button>
+              <button type="button" class="button filter__button">
+                Дизайн
+              </button>
             </li>
             <li class="item">
-              <button type="button" class="button secondary">Маркетинг</button>
+              <button type="button" class="button filter__button">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
-          <ul class="gallery list">
-            <li class="item">
-              <a href="" class="gallery-link">
-                <div class="gallery-thumb">
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <a href="" class="gallery__link">
+                <div class="gallery__thumb">
                   <img
+                    class="gallery__img"
                     src="./images/gallery/texnokrak.jpg"
                     alt="Ноутбук"
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p class="text">
+                  <div class="gallery__overlay">
+                    <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -103,24 +127,25 @@
                   </div>
                 </div>
 
-                <div class="desc">
-                  <h2 class="gallery-title">Технокряк</h2>
-                  <p class="gallery-text">Веб-сайт</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Технокряк</h2>
+                  <p class="gallery__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="item">
-              <a href="" class="gallery-link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link">
+                <div class="gallery__thumb">
                   <img
+                    class="gallery__img"
                     src="./images/gallery/pster-no-vs-gs.jpg"
                     alt="Ноутбук"
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p class="text">
+                  <div class="gallery__overlay">
+                    <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -128,26 +153,27 @@
                     </p>
                   </div>
                 </div>
-                <div class="desc">
-                  <h2 class="gallery-title">
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">
                     Постер New Orlean vs Golden Star
                   </h2>
-                  <p class="gallery-text">Дизайн</p>
+                  <p class="gallery__text">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="item">
-              <a href="" class="gallery-link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link">
+                <div class="gallery__thumb">
                   <img
+                    class="gallery__img"
                     src="./images/gallery/rest-seafood.jpg"
                     alt="Ноутбук"
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p class="text">
+                  <div class="gallery__overlay">
+                    <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -155,23 +181,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="desc">
-                  <h2 class="gallery-title">Ресторан Seafood</h2>
-                  <p class="gallery-text">Приложение</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Ресторан Seafood</h2>
+                  <p class="gallery__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="gallery-link">
-                <div class="gallery-thumb">
+
+            <li class="gallery__item">
+              <a href="" class="gallery__link">
+                <div class="gallery__thumb">
                   <img
+                    class="gallery__img"
                     src="./images/gallery/project-prime.jpg"
                     alt="Ноутбук"
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p class="text">
+                  <div class="gallery__overlay">
+                    <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -179,23 +207,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="desc">
-                  <h2 class="gallery-title">Проект Prime</h2>
-                  <p class="gallery-text">Маркетинг</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Проект Prime</h2>
+                  <p class="gallery__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="gallery-link">
-                <div class="gallery-thumb">
+
+            <li class="gallery__item">
+              <a href="" class="gallery__link">
+                <div class="gallery__thumb">
                   <img
+                    class="gallery__img"
                     src="./images/gallery/project-boxes.jpg"
                     alt="Ноутбук"
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p class="text">
+                  <div class="gallery__overlay">
+                    <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -203,23 +233,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="desc">
-                  <h2 class="gallery-title">Проект Boxes</h2>
-                  <p class="gallery-text">Приложение</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Проект Boxes</h2>
+                  <p class="gallery__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="gallery-link">
-                <div class="gallery-thumb">
+
+            <li class="gallery__item">
+              <a href="" class="gallery__link">
+                <div class="gallery__thumb">
                   <img
+                    class="gallery__img"
                     src="./images/gallery/inspiration.jpg"
                     alt="Ноутбук"
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p class="text">
+                  <div class="gallery__overlay">
+                    <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -227,23 +259,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="desc">
-                  <h2 class="gallery-title">Inspiration has no Borders</h2>
-                  <p class="gallery-text">Веб-сайт</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Inspiration has no Borders</h2>
+                  <p class="gallery__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="gallery-link">
-                <div class="gallery-thumb">
+
+            <li class="gallery__item">
+              <a href="" class="gallery__link">
+                <div class="gallery__thumb">
                   <img
+                    class="gallery__img"
                     src="./images/gallery/limited-ed.jpg"
                     alt="Ноутбук"
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p class="text">
+                  <div class="gallery__overlay">
+                    <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -251,23 +285,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="desc">
-                  <h2 class="gallery-title">Издание Limited Edition</h2>
-                  <p class="gallery-text">Дизайн</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Издание Limited Edition</h2>
+                  <p class="gallery__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="gallery-link">
-                <div class="gallery-thumb">
+
+            <li class="gallery__item">
+              <a href="" class="gallery__link">
+                <div class="gallery__thumb">
                   <img
+                    class="gallery__img"
                     src="./images/gallery/project-lab.jpg"
                     alt="Ноутбук"
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p class="text">
+                  <div class="gallery__overlay">
+                    <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -275,23 +311,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="desc">
-                  <h2 class="gallery-title">Проект LAB</h2>
-                  <p class="gallery-text">Маркетинг</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Проект LAB</h2>
+                  <p class="gallery__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="gallery-link">
-                <div class="gallery-thumb">
+
+            <li class="gallery__item">
+              <a href="" class="gallery__link">
+                <div class="gallery__thumb">
                   <img
+                    class="gallery__img"
                     src="./images/gallery/growing-bus.jpg"
                     alt="Ноутбук"
                     width="370"
                     height="294"
                   />
-                  <div class="gallery-overlay">
-                    <p class="text">
+                  <div class="gallery__overlay">
+                    <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -299,9 +337,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="desc">
-                  <h2 class="gallery-title">Growing Business</h2>
-                  <p class="gallery-text">Приложение</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Growing Business</h2>
+                  <p class="gallery__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -312,118 +350,122 @@
 
     <!-- <footer></footer> -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-contact">
-            <a href="./index.html" lang="en" class="logo"
-              ><span class="logo-web">Web</span
-              ><span class="logo-studio white">Studio</span></a
-            >
-            <address class="address" id="address">
-              <ul class="list">
-                <li>
-                  <a
-                    href="https://goo.gl/maps/FM9S6xDDUZ7LTuPC8"
-                    target="_blank"
-                    rel="nooper nofollow noreferre"
-                    class="post-address"
-                    >г. Киев, пр-т Леси Украинки, 26</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:info@example.com" class="tel-address"
-                    >info@example.com</a
-                  >
-                </li>
-                <li>
-                  <a href="tel:+380991111111" class="tel-address"
-                    >+38 099 111 11 11</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
-
-          <div class="footer-socials">
-            <h3 class="title">присоединяйтесь</h3>
-            <ul class="socials-list">
-              <li class="socials-item">
+      <div class="container footer-content">
+        <div class="footer__contacts">
+          <a class="logo footer__logo" href="./index.html" lang="en"
+            ><span class="logo--blue-word">Web</span
+            ><span class="logo--focused footer__logo--white-word"
+              >Studio</span
+            ></a
+          >
+          <address class="address" id="address">
+            <ul class="contacts address__contacts list">
+              <li>
                 <a
-                  href=""
+                  class="contacts__link contacts__link--address-white"
+                  href="https://goo.gl/maps/FM9S6xDDUZ7LTuPC8"
                   target="_blank"
                   rel="nooper nofollow noreferre"
-                  aria-label="instagram"
-                  class="socials-icon"
+                  >г. Киев, пр-т Леси Украинки, 26</a
                 >
-                  <svg class="icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a>
               </li>
-
-              <li class="socials-item">
+              <li>
                 <a
-                  href=""
-                  target="_blank"
-                  rel="nooper nofollow noreferre"
-                  aria-label="twitter"
-                  class="socials-icon"
+                  class="contacts__link contacts__link--address-gray"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
                 >
-                  <svg class="icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a>
               </li>
-
-              <li class="socials-item">
+              <li>
                 <a
-                  href=""
-                  target="_blank"
-                  rel="nooper nofollow noreferre"
-                  aria-label="facebook"
-                  class="socials-icon"
+                  class="contacts__link contacts__link--address-gray"
+                  href="tel:+380991111111"
+                  >+38 099 111 11 11</a
                 >
-                  <svg class="icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="socials-item">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="nooper nofollow noreferre"
-                  aria-label="linkedin"
-                  class="socials-icon"
-                >
-                  <svg class="icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
               </li>
             </ul>
-          </div>
-          <div class="footer-subscribe">
-            <h3 class="title">Подпишитесь на рассылку</h3>
-            <form class="footer-form" name="footer" autocomplete="off">
-              <label class="footer-label">
-                <input
-                  class="footer-input"
-                  type="email"
-                  name="email"
-                  placeholder=" "
-                />
-                <span class="text-label"> E-mail</span></label
+          </address>
+        </div>
+
+        <div class="footer__social-media">
+          <h3 class="social-media__title title">присоединяйтесь</h3>
+          <ul class="social-media">
+            <li class="social-media__item social-media__item--bg-grey">
+              <a
+                class="social-media__icon social-media__icon--white-fill"
+                href=""
+                target="_blank"
+                rel="nooper nofollow noreferre"
+                aria-label="instagram"
               >
-              <button class="button primary" type="submit">
-                <span>Подписаться</span>
-                <svg class="icon-send" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                <svg class="social-media__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
-              </button>
-            </form>
-          </div>
+              </a>
+            </li>
+
+            <li class="social-media__item social-media__item--bg-grey">
+              <a
+                class="social-media__icon social-media__icon--white-fill"
+                href=""
+                target="_blank"
+                rel="nooper nofollow noreferre"
+                aria-label="twitter"
+              >
+                <svg class="social-media__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-media__item social-media__item--bg-grey">
+              <a
+                class="social-media__icon social-media__icon--white-fill"
+                href=""
+                target="_blank"
+                rel="nooper nofollow noreferre"
+                aria-label="facebook"
+              >
+                <svg class="social-media__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-media__item social-media__item--bg-grey">
+              <a
+                class="social-media__icon social-media__icon--white-fill"
+                href=""
+                target="_blank"
+                rel="nooper nofollow noreferre"
+                aria-label="linkedin"
+              >
+                <svg class="social-media__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe footer__subscribe">
+          <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
+          <form class="subscribe-form" name="footer" autocomplete="off">
+            <label class="subscribe-form__label">
+              <input
+                class="subscribe-form__input"
+                type="email"
+                name="email"
+                placeholder=" "
+              />
+              <span class="subscribe-form__text"> E-mail</span></label
+            >
+            <button class="button button--primary footer__button" type="submit">
+              Подписаться
+              <svg class="button__icon-send" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
