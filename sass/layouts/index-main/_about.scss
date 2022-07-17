@@ -1,0 +1,36 @@
+.about {
+    padding-top: 0;
+
+    
+&__list {
+    @extend %section;
+    position: relative;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+&__item {
+    position: relative;
+    display: flex;
+}
+
+&__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+&__thamb {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    width: 100%;
+    height: 70px;
+
+    background: rgba(47, 48, 58, 0.8);
+}
+}
+

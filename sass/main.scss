@@ -1,0 +1,33 @@
+// utils
+@import "./utils/decimal";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./utils/colors";
+
+// base
+@import "./base/common";
+@import "./base/reset";
+
+// components
+@import "./components/container";
+@import "./components/logo";
+@import "./components/navigation";
+@import "./components/contacts";
+@import "./components/hero-overlay";
+@import "./components/title";
+@import "./components/social-media";
+@import "./components/subscribe-form";
+@import "./components/modal";
+@import "./components/modal-form";
+@import "./components/buttons";
+
+// layouts
+@import "./layouts/header";
+@import "./layouts/index-main/hero";
+@import "./layouts/index-main/features";
+@import "./layouts/index-main/about";
+@import "./layouts/index-main/team";
+@import "./layouts/index-main/clients";
+@import "./layouts/footer";
+
+

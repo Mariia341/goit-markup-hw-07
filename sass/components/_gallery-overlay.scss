@@ -1,0 +1,35 @@
+.gallery__thumb {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+.gallery__thumb:hover & {
+        transform: translateY(0)
+}
+}
+
+
+.overlay__text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--primary-white-color);
+}

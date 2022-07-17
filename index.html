@@ -9,7 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
 
     <link
       rel="stylesheet"
@@ -29,7 +30,7 @@
           ><span class="logo--focused">Studio</span></a
         >
         <nav class="nav">
-          <ul class="nav__list list">
+          <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--current" href="">Студия</a>
             </li>
@@ -42,7 +43,7 @@
           </ul>
         </nav>
 
-        <ul class="contacts header__contacts list">
+        <ul class="contacts header__contacts">
           <li class="contacts__item contacts__item--inline">
             <a
               class="contacts__link contacts__link--inline"
@@ -74,18 +75,18 @@
       <section class="hero overlay">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button button--primary" type="button" data-modal-open>
+          <button class="button--primary" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
       </section>
 
       <!-- features section-->
-      <section class="features section">
+      <section class="features">
         <div class="container">
           <h2 hidden>Особенности</h2>
 
-          <ul class="features__list list">
+          <ul class="features__list">
             <li class="features__item">
               <div class="features__pic">
                 <svg class="features__icon" width="70" height="70">
@@ -142,7 +143,7 @@
       </section>
 
       <!-- about us -->
-      <section class="about section">
+      <section class="about">
         <div class="container">
           <h2 class="section-title centered">Чем мы занимаемся</h2>
 
@@ -185,9 +186,9 @@
       </section>
 
       <!-- our team -->
-      <section class="section team">
+      <section class="team">
         <div class="container">
-          <h2 class="section-title centered">Наша команда</h2>
+          <h2 class="section-title">Наша команда</h2>
 
           <ul class="team__list">
             <li class="team__item team--shadow">
@@ -201,8 +202,8 @@
               </a>
 
               <div class="team__desc">
-                <h3 class="team__title centered">Игорь Демьяненко</h3>
-                <p lang="en" class="team__text centered">Product Designer</p>
+                <h3 class="team__title">Игорь Демьяненко</h3>
+                <p lang="en" class="team__text">Product Designer</p>
 
                 <ul class="social-media">
                   <li class="social-media__item">
@@ -280,8 +281,8 @@
                 />
               </a>
               <div class="team__desc">
-                <h3 class="team__title centered">Ольга Репина</h3>
-                <p lang="en" class="team__text centered">Frontend Developer</p>
+                <h3 class="team__title">Ольга Репина</h3>
+                <p lang="en" class="team__text">Frontend Developer</p>
                 <ul class="social-media">
                   <li class="social-media__item">
                     <a
@@ -358,8 +359,8 @@
                 />
               </a>
               <div class="team__desc">
-                <h3 class="team__title centered">Николай Тарасов</h3>
-                <p lang="en" class="team__text centered">Marketing</p>
+                <h3 class="team__title">Николай Тарасов</h3>
+                <p lang="en" class="team__text">Marketing</p>
 
                 <ul class="social-media">
                   <li class="social-media__item">
@@ -437,8 +438,8 @@
                 />
               </a>
               <div class="team__desc">
-                <h3 class="team__title centered">Михаил Ермаков</h3>
-                <p lang="en" class="team__text centered">UI Designer</p>
+                <h3 class="team__title">Михаил Ермаков</h3>
+                <p lang="en" class="team__text">UI Designer</p>
                 <ul class="social-media">
                   <li class="social-media__item">
                     <a
@@ -509,9 +510,9 @@
       </section>
 
       <!-- our clients -->
-      <section class="section clients">
+      <section class="clients">
         <div class="container">
-          <h2 class="section-title centered">Постоянные клиенты</h2>
+          <h2 class="section-title">Постоянные клиенты</h2>
 
           <ul class="clients__list">
             <li class="clients__item">
@@ -577,7 +578,7 @@
             ></a
           >
           <address class="address" id="address">
-            <ul class="contacts address__contacts list">
+            <ul class="contacts address__contacts">
               <li>
                 <a
                   class="contacts__link contacts__link--address-white"
@@ -665,7 +666,7 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe footer__subscribe">
+        <div class="subscribe-form footer__subscribe-form">
           <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
           <form class="subscribe-form" name="footer" autocomplete="off">
             <label class="subscribe-form__label">
@@ -677,7 +678,7 @@
               />
               <span class="subscribe-form__text"> E-mail</span></label
             >
-            <button class="button button--primary footer__button" type="submit">
+            <button class="button--primary footer__button" type="submit">
               Подписаться
               <svg class="button__icon-send" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
@@ -697,7 +698,7 @@
         </button>
         <section class="modal__content">
           <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
-          <form class="modal__form" autocomplete="off">
+          <form class="form modal__form" autocomplete="off">
             <label class="form__field">
               <span class="form__label">Имя</span>
               <input
@@ -754,7 +755,7 @@
               <span>Соглашаюсь с рассылкой и принимаю</span>
               <a href="" class="policy-link">Условия договора</a>
             </label>
-            <button class="button button--primary form-button" type="submit">
+            <button class="button--primary form__button" type="submit">
               Отправить
             </button>
           </form>

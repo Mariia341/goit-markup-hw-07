@@ -1,0 +1,87 @@
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 650px;
+
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.title {
+    color: var(--title-text-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    @extend %centered;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.features__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.about__title {
+    margin: 0;
+    text-align: center;
+
+    color: var(--primary-white-color);
+}
+
+.team__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    @extend %centered;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.social-media__title,
+.subscribe__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: var(--primary-white-color);
+}
+
+.gallery__title {
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.modal__title {
+    margin-top: 2px;
+    margin-bottom: 12px;
+
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: none;
+    color: var(--title-text-color);}
