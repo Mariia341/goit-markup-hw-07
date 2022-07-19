@@ -3,24 +3,16 @@
     justify-content: $jc;
     align-items: $ai;
 }
-// @include flexCentered (flex,center,center);
 
 @mixin  verticalMargin ($mt: 0, $mb: 10px) {
     margin-top: $mt;
     margin-bottom: $mb;
 }
 
-// @include verticalMargin (34px, 34px);
-
 @mixin horizontallylMargin ($ml: 0, $mr: 0) {
     margin-left: $ml;
     margin-right: $mr;
 }
-// @include horizontallylMargin (auto, auto);
-// @include horizontallylMargin (34px, 34px);
-
-// @include verticalMargin (0, 0);
-// @include horizontallylMargin (0, 0);
 
 @mixin fonts ($fw: 400, $fs: 14px, $lh: 2 , $ls: 0.03em) {
     font-weight: $fw;
@@ -28,5 +20,5 @@
     line-height: $lh;
     letter-spacing: $ls;
 }
-// @include fonts (500, 14px, 1.14, 0.06em);
+
         
