@@ -4,20 +4,21 @@
 
 &__list {
     @extend %list;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    margin-right: 0;
+
     display: flex;
     flex-wrap: wrap;
+    @include verticalMargin (0, 0);
+    @include horizontallylMargin (null, 0);
 
+    padding-left: 0;
     background-color: var(--primary-white-color);
 }
 
 
 &__link {
     display: block;
-    margin: 0;
+    @include verticalMargin (0, 0);
+    @include horizontallylMargin (0, 0);
     padding: 0;
 
     text-decoration: none;
@@ -26,18 +27,20 @@
 
 &__desc {
     padding: 20px 24px;
+
     background: var(--primary-white-color);
+
     border: 1px solid #EEEEEE;
     border-top: 0;
 }
 }
 
 .gallery__item {
-    margin-bottom: 30px;
+    @include verticalMargin (null, 30px);
 
 
 &:not(:nth-child(3n)) {
-    margin-right: 30px;
+    @include horizontallylMargin (null, 30px);
 }
 
 
@@ -51,11 +54,11 @@
 
 
 .gallery__text {
-    margin-top: 0;
-    margin-bottom: 0;
+    @include verticalMargin (0, 0);
+    
+    @include fonts (null, 16px, 1.88, none);
+ 
     color: var(--primary-text-color);
-    font-size: 16px;
-    line-height: 1.88;
 }
 
 

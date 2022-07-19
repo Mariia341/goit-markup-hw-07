@@ -4,22 +4,19 @@
 &__list {
     @extend %list;
     display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
+    @include verticalMargin (0, 0);
     padding-left: 0;
     row-gap: 30px;
     flex-basis: calc(1170 - (30*3)/4);
 }
 
 &__item:not(:last-child) {
-    margin-right: 30px;
+    @include horizontallylMargin (null, 30px);
 }
 
 &__pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+    @include flexCentered;
+    @include verticalMargin (null, 30px);
 
     height: 120px;
 
@@ -29,9 +26,8 @@
 }
 
 &__text {
-    margin-top: 0;
-    margin-bottom: 0;
-
+    @include verticalMargin (0, 0);
+    
     font-style: normal;
     line-height: 1.71;
     font-style: initial;

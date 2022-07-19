@@ -2,8 +2,7 @@
     border-bottom: 1px solid var(--header-boder-color);
 
     &__content {
-            display: flex;
-            align-items: center;
+        @include flexCentered (flex, null, center);
         }
 }
 

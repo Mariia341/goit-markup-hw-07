@@ -1,8 +1,9 @@
 .social-media {
-    display: flex;
+    @include flexCentered (flex, space-between, center);
+    @include verticalMargin (0, 0);
+    @include horizontallylMargin (0, 0);
+    
     padding: 0;
-    margin: 0;
-    justify-content: space-between;
 
     list-style: none;
 }
@@ -10,16 +11,15 @@
 
 .social-media__link {
     @extend %list;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCentered;
 
     width: inherit;
     height: inherit;
 
-    fill: var(--primary-text-color);
     text-decoration: none;
+
+    fill: var(--primary-text-color);
+
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 &:hover,
@@ -29,17 +29,15 @@
 }
 
 .social-media__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCentered;
 
     width: 44px;
     height: 44px;
 
     border-radius: 50%;
     border: 1px transparent;
-
     cursor: pointer;
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

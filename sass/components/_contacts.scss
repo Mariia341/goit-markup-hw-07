@@ -1,20 +1,17 @@
 .contacts {
     @extend %list;
+    @include verticalMargin (0, 0);
     padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .header__contacts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCentered ();
 
-    margin-left: auto;
+    @include horizontallylMargin (auto, null)
 }
 
 .contacts__item--inline:not(:first-child) {
-    margin-left: 50px;
+    @include horizontallylMargin (50px, null)
 }
 
 .contacts__link {
@@ -28,25 +25,25 @@
         padding-top: 32px;
         padding-bottom: 32px;
 
-        color: var(--primary-text-color);
+        @include fonts (500, null, 1.14, 0.02em);
 
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
+        color: var(--primary-text-color);
     }
 
     &--address-white {
-        color: var(--primary-white-color);
         font-style: normal;
         line-height: 1.71;
+
+        color: var(--primary-white-color); 
     }
 
     &--address-gray {
         padding-top: 9px;
 
-        color: rgba(255, 255, 255, 0.6);
         font-style: normal;
         line-height: 1.71;
+
+        color: rgba(255, 255, 255, 0.6);
     }
 
     &:hover,
@@ -59,10 +56,10 @@
 
 .icon-envelope,
 .icon-phon {
-    margin-right: 10px;
+    @include horizontallylMargin (null, 10px);
 }
 
 .footer__contacts {
     display: block;
-    margin-right: 70px;
+    @include horizontallylMargin (null, 70px);
 }

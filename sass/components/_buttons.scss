@@ -2,16 +2,15 @@
     display: inline-block;
     padding: 10px 32px;
 
-    border-radius: 4px;
-    border: 1px solid transparent;
+    @include fonts (700, 16px, 1.88, 0.06em);
+    font-family: inherit;
 
     color: var(--title-text-color);
     background-color: var(--primary-white-color);
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
+
+    border-radius: 4px;
+    border: 1px solid transparent;
+
     cursor: pointer;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -22,6 +21,7 @@
 
 .button--primary {
     @extend .button;
+
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 
@@ -35,16 +35,17 @@
 // footer__button
 
 .footer__button {
-    @extend .button;
+    @extend .button; 
+    @include horizontallylMargin (12px, null);
+
     padding: 10px 29px;
-    margin-left: 12px;
-}
+  }
 
 .button__icon-send {
     display: inline-block;
     align-items: center;
     vertical-align: middle;
-    margin-left: 10px;
+    @include horizontallylMargin (10px, null); 
 }
 
 // form__button
@@ -52,9 +53,8 @@
 .form__button {
     @extend .button;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+    @include horizontallylMargin (auto, auto);
+    @include verticalMargin (30px, null);
     padding: 10px 55px;
 }
 
@@ -62,15 +62,14 @@
 
 .filter__button {
     @extend .button;
-    padding: 6px 22px;
-    margin-bottom: 34px;
+    @include verticalMargin (null, 34px);
+    padding: 6px 22px; 
+
+    @include fonts(500, 16px, 1.62, null);
 
     background-color: var(--secondary-bg-color);
     color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-
+ 
 
 &:hover,
 &:focus {

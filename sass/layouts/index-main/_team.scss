@@ -1,24 +1,22 @@
 .team {
     @extend %section;
+
     background-color: var(--secondary-bg-color);
 
 
 &__text {
-    margin-top: 0;
-    margin-bottom: 16px;
+    @include verticalMargin (0, 16px);
 
     @extend %centered;
-    font-size: 16px;
-    line-height: 1.19;
+    @include fonts (null, 16px, 1.19, null);
 }
 
 &__list {
     @extend %list;
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    justify-content: space-between;
+    @include flexCentered (flex, space-between, center);
+    @include verticalMargin (0, 0);
+  
+    padding-left: 0;  
 }
 
 &__item {

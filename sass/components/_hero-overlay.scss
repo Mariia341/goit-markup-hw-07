@@ -1,7 +1,5 @@
 .overlay {
-    margin-left: auto;
-    margin-right: auto;
-
+    @include horizontallylMargin (auto, auto);
     max-width: 1600px;
     height: 600;
 
