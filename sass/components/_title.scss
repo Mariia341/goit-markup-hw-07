@@ -47,8 +47,7 @@
     color: var(--title-text-color);
 }
 
-.social-media__title,
-.subscribe__title {
+.footer__title {
     @include verticalMargin (0, 20px);
    
     color: var(--primary-white-color);

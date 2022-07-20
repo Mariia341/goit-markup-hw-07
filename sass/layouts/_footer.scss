@@ -5,7 +5,7 @@
 
 
 &-content {
-    @include flexCentered (flex, flex-start, center);
+    @include flexCentered (flex, flex-start, null);
 }
 }
 

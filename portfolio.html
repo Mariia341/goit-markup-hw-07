@@ -25,18 +25,18 @@
     <header class="header">
       <div class="container header__content">
         <a class="logo" href="./index.html" lang="en">
-          <span class="logo--blue-word">Web</span
-          ><span class="logo--focused">Studio</span></a
+          <span class="logo__text logo__text--blue">Web</span
+          ><span class="logo__text logo__text--focused">Studio</span></a
         >
         <nav class="nav">
-          <ul class="nav__list list">
+          <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="./index.html">Студия</a>
+              <a class="nav__link nav__link--current" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--current" href="./portfolio.html"
-                >Портфолио</a
-              >
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#address">Контакты</a>
@@ -44,7 +44,7 @@
           </ul>
         </nav>
 
-        <ul class="contacts header__contacts list">
+        <ul class="contacts header__contacts">
           <li class="contacts__item contacts__item--inline">
             <a
               class="contacts__link contacts__link--inline"
@@ -75,7 +75,7 @@
       <section class="gallery section">
         <div class="container">
           <h1 hidden>Портфолио</h1>
-          <ul class="filter filter__list">
+          <ul class="filter">
             <li class="filter__item">
               <button
                 type="button"
@@ -85,16 +85,24 @@
               </button>
             </li>
             <li class="item">
-              <button type="button" class="filter__button">Веб-сайты</button>
+              <button type="button" class="button filter__button">
+                Веб-сайты
+              </button>
             </li>
             <li class="item">
-              <button type="button" class="filter__button">Приложения</button>
+              <button type="button" class="button filter__button">
+                Приложения
+              </button>
             </li>
             <li class="item">
-              <button type="button" class="filter__button">Дизайн</button>
+              <button type="button" class="button filter__button">
+                Дизайн
+              </button>
             </li>
             <li class="item">
-              <button type="button" class="filter__button">Маркетинг</button>
+              <button type="button" class="button filter__button">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
@@ -109,8 +117,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery__overlay">
-                    <p class="overlay__text">
+                  <div class="gallery-overlay">
+                    <p class="gallery-overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -136,8 +144,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery__overlay">
-                    <p class="overlay__text">
+                  <div class="gallery-overlay">
+                    <p class="gallery-overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -164,8 +172,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery__overlay">
-                    <p class="overlay__text">
+                  <div class="gallery-overlay">
+                    <p class="gallery-overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -190,8 +198,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery__overlay">
-                    <p class="overlay__text">
+                  <div class="gallery-overlay">
+                    <p class="gallery-overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -216,8 +224,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery__overlay">
-                    <p class="overlay__text">
+                  <div class="gallery-overlay">
+                    <p class="gallery-overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -242,8 +250,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery__overlay">
-                    <p class="overlay__text">
+                  <div class="gallery-overlay">
+                    <p class="gallery-overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -268,8 +276,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery__overlay">
-                    <p class="overlay__text">
+                  <div class="gallery-overlay">
+                    <p class="gallery-overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -294,8 +302,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery__overlay">
-                    <p class="overlay__text">
+                  <div class="gallery-overlay">
+                    <p class="gallery-overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -320,8 +328,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="gallery__overlay">
-                    <p class="overlay__text">
+                  <div class="gallery-overlay">
+                    <p class="gallery-overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -345,8 +353,8 @@
       <div class="container footer-content">
         <div class="footer__contacts">
           <a class="logo footer__logo" href="./index.html" lang="en"
-            ><span class="logo--blue-word">Web</span
-            ><span class="logo--focused footer__logo--white-word"
+            ><span class="logo__text logo__text--blue">Web</span
+            ><span class="logo__text logo__text--focused logo__text--white"
               >Studio</span
             ></a
           >
@@ -380,7 +388,7 @@
         </div>
 
         <div class="footer__social-media">
-          <h3 class="social-media__title title">присоединяйтесь</h3>
+          <h3 class="footer__title title">присоединяйтесь</h3>
           <ul class="social-media">
             <li class="social-media__item social-media__item--bg-grey">
               <a
@@ -440,7 +448,7 @@
           </ul>
         </div>
         <div class="subscribe-form footer__subscribe-form">
-          <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
+          <h3 class="footer__title">Подпишитесь на рассылку</h3>
           <form class="subscribe-form" name="footer" autocomplete="off">
             <label class="subscribe-form__label">
               <input

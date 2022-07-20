@@ -20,8 +20,6 @@
 // button--primary
 
 .button--primary {
-    @extend .button;
-
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 
@@ -35,7 +33,6 @@
 // footer__button
 
 .footer__button {
-    @extend .button; 
     @include horizontallylMargin (12px, null);
 
     padding: 10px 29px;
@@ -51,7 +48,6 @@
 // form__button
 
 .form__button {
-    @extend .button;
     display: flex;
     @include horizontallylMargin (auto, auto);
     @include verticalMargin (30px, null);
@@ -61,7 +57,6 @@
  /* filter__button */
 
 .filter__button {
-    @extend .button;
     @include verticalMargin (null, 34px);
     padding: 6px 22px; 
 

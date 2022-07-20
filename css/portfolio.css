@@ -52,15 +52,15 @@ img {
   line-height: 1.2;
   text-decoration: none;
 }
-.logo--blue-word {
+
+.logo__text--blue {
   color: var(--accent-color);
 }
-
-.logo--focused {
+.logo__text--focused {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo--focused:hover, .logo--focused:focus {
+.logo__text--focused:hover, .logo__text--focused:focus {
   color: var(--accent-color);
 }
 
@@ -70,13 +70,10 @@ img {
   padding-bottom: 20px;
 }
 
-.footer__logo--white-word {
+.logo__text--white {
   color: var(--primary-white-color);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer__logo--white-word:hover, .footer__logo--white-word:focus {
-  color: var(--accent-color);
 }
 
 .nav__list {
@@ -244,8 +241,7 @@ img {
   color: var(--title-text-color);
 }
 
-.social-media__title,
-.subscribe__title {
+.footer__title {
   margin-top: 0;
   margin-bottom: 20px;
   color: var(--primary-white-color);
@@ -419,7 +415,7 @@ img {
   overflow: hidden;
 }
 
-.gallery__overlay {
+.gallery-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -437,12 +433,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.gallery__thumb:hover .gallery__overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.overlay__text {
+.gallery-overlay__text {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
@@ -451,8 +442,12 @@ img {
   line-height: 1.56;
   color: var(--primary-white-color);
 }
+.gallery__thumb:hover .gallery-overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 
-.button, .filter__button, .form__button, .footer__button, .button--primary {
+.button {
   display: inline-block;
   padding: 10px 32px;
   font-weight: 700;
@@ -522,7 +517,7 @@ img {
   background-color: var(--accent-color);
 }
 
-.filter__list {
+.filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,9 +559,6 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .gallery__list {

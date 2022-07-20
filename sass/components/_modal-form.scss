@@ -62,13 +62,13 @@
 }
 }
 
-.checkbox__input {
+.form__checkbox-input {
     appearance: none;
     position: absolute;
     @include horizontallylMargin (14px, null);
 }
 
-.checkbox__icon {
+.form__checkbox-icon {
     display: inline-block;
     @include horizontallylMargin (12px, null);
     width: 16px;
@@ -80,7 +80,7 @@
     transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
 
-.checkbox__input:checked+& {
+.form__checkbox-input:checked+& {
     border: 2px solid var(--accent-color);
     background-color: var(--accent-color);
     background-image: url(../images/icon-check.svg);

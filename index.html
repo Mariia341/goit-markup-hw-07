@@ -25,8 +25,8 @@
     <header class="header">
       <div class="container header__content">
         <a class="logo" href="./index.html" lang="en">
-          <span class="logo--blue-word">Web</span
-          ><span class="logo--focused">Studio</span></a
+          <span class="logo__text logo__text--blue">Web</span
+          ><span class="logo__text logo__text--focused">Studio</span></a
         >
         <nav class="nav">
           <ul class="nav__list">
@@ -76,7 +76,7 @@
       <section class="hero overlay">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button--primary" type="button" data-modal-open>
+          <button class="button button--primary" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -192,7 +192,7 @@
           <h2 class="section-title">Наша команда</h2>
 
           <ul class="team__list">
-            <li class="team__item team--shadow">
+            <li class="team__item team__item--shadow">
               <a class="team__link" href="">
                 <img
                   class="team__img"
@@ -272,7 +272,7 @@
               </div>
             </li>
 
-            <li class="team__item team--shadow">
+            <li class="team__item team__item--shadow">
               <a class="team__link" href="">
                 <img
                   class="team__img"
@@ -350,7 +350,7 @@
               </div>
             </li>
 
-            <li class="team__item team--shadow">
+            <li class="team__item team__item--shadow">
               <a class="team__link" href="">
                 <img
                   class="team__img"
@@ -429,7 +429,7 @@
               </div>
             </li>
 
-            <li class="team__item team--shadow">
+            <li class="team__item team__item--shadow">
               <a class="team__link" href="">
                 <img
                   class="team__img"
@@ -573,8 +573,8 @@
       <div class="container footer-content">
         <div class="footer__contacts">
           <a class="logo footer__logo" href="./index.html" lang="en"
-            ><span class="logo--blue-word">Web</span
-            ><span class="logo--focused footer__logo--white-word"
+            ><span class="logo__text logo__text--blue">Web</span
+            ><span class="logo__text logo__text--focused logo__text--white"
               >Studio</span
             ></a
           >
@@ -608,7 +608,7 @@
         </div>
 
         <div class="footer__social-media">
-          <h3 class="social-media__title title">присоединяйтесь</h3>
+          <h3 class="footer__title title">присоединяйтесь</h3>
           <ul class="social-media">
             <li class="social-media__item social-media__item--bg-grey">
               <a
@@ -668,7 +668,7 @@
           </ul>
         </div>
         <div class="subscribe-form footer__subscribe-form">
-          <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
+          <h3 class="footer__title">Подпишитесь на рассылку</h3>
           <form class="subscribe-form" name="footer" autocomplete="off">
             <label class="subscribe-form__label">
               <input
@@ -679,7 +679,7 @@
               />
               <span class="subscribe-form__text"> E-mail</span></label
             >
-            <button class="button--primary footer__button" type="submit">
+            <button class="button button--primary footer__button" type="submit">
               Подписаться
               <svg class="button__icon-send" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
@@ -744,19 +744,19 @@
                 placeholder="Введите текст"
               ></textarea>
             </label>
-            <label class="checkbox__label">
+            <label class="form__checkbox-label">
               <input
-                class="checkbox__input"
+                class="form__checkbox-input"
                 type="checkbox"
                 name="checkbox"
                 value="checkbox"
                 checked
               />
-              <span class="checkbox__icon"></span>
+              <span class="form__checkbox-icon"></span>
               <span>Соглашаюсь с рассылкой и принимаю</span>
               <a href="" class="policy-link">Условия договора</a>
             </label>
-            <button class="button--primary form__button" type="submit">
+            <button class="button button--primary form__button" type="submit">
               Отправить
             </button>
           </form>

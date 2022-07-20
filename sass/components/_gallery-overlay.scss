@@ -4,7 +4,7 @@
     overflow: hidden;
 }
 
-.gallery__overlay {
+.gallery-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -21,17 +21,17 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
+    &__text {
+        @include verticalMargin (0, 0);
+        @include horizontallylMargin (0, 0);
+
+        @include fonts (null, 18px, 1.56, null);
+
+        color: var(--primary-white-color);
+}
+
 .gallery__thumb:hover & {
     transform: translateY(0)
 }
 }
 
-
-.overlay__text {
-    @include verticalMargin (0, 0);
-    @include horizontallylMargin (0, 0);
-
-    @include fonts (null, 18px, 1.56, null);
-
-    color: var(--primary-white-color);
-}

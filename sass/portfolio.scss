@@ -1,12 +1,10 @@
 // utils
-@import "./utils/decimal";
 @import "./utils/mixins";
 @import "./utils/placeholders";
 @import "./utils/colors";
 
 // base
 @import "./base/common";
-@import "./base/reset";
 
 // components
 @import "./components/container";
